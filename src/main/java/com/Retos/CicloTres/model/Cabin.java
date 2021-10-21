@@ -26,12 +26,12 @@ public class Cabin implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id", columnDefinition = "number")
     private Integer id;
+    @Column(name="name", columnDefinition = "varchar(45)")
+    private String name;
     @Column(name="brand", columnDefinition = "varchar(45)")
     private String brand;
     @Column(name="rooms", columnDefinition = "number")
     private Integer rooms;
-    @Column(name="name", columnDefinition = "varchar(45)")
-    private String name;
     @Column(name="description", columnDefinition = "varchar(250)")
     private String description;
 
